@@ -7,8 +7,7 @@
 # 3.) Create an OpenAI language model deployments. (GPT-3, GPT-4, etc.)
 # 4.) Store the OpenAI account and model details in the key vault.
 module "openai" {
-  source  = "Pwd9000-ML/openai-service/azurerm"
-  version = ">= 1.1.0"
+  source  = "app.terraform.io/msccde/openai-service/azurerm"
 
   #common
   location = var.location
